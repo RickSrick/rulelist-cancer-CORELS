@@ -1,0 +1,125 @@
+RULELIST:
+It's LUAD cancer = True
+SCORE:0.4142857142857143
+==============================
+RULELIST:
+if [TP53 && not FLG]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.6
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.6571428571428571
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.7428571428571429
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.5857142857142857
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.6714285714285714
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.7142857142857143
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.7714285714285715
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.6714285714285714
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.6285714285714286
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.6571428571428571
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.6714285714285714
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.6571428571428571
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.7285714285714285
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.7
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.7285714285714285
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.6571428571428571
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.8
+==============================
+AVG SCORE:0.6698412698412698
+==============================

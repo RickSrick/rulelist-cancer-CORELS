@@ -8,3 +8,7 @@ primo = Test(files, "LUAD", "LUSC")
 secondo = Test(files, "OV", "COADREAD")
 
 primo.launch_test(0.05, 10000, "curious", 0.01)
+primo.launch_test(0.05, 100000, "bfs", 0.4)
+
+secondo.launch_test(0.01, 10000, "curious", 0.01)
+secondo.launch_test(0.01, 100000, "bfs", 0.01)
