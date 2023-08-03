@@ -4,11 +4,12 @@ from corels import *
 import pandas as pd
 import numpy as np
 import csv
-import sys
+import NotificationManager
 import os
 
 MAX_CARD_SUPPORT = 2
 TEST_SIZE = 0.2
+
 
 class Test:
 
@@ -41,7 +42,7 @@ class Test:
         plt.savefig(filename + "_plot.png")
         plt.close()
         file.close()
-
+        NotificationManager.telegram_notify(number_node, policy, percentage, min_support, filename)
         return np.average(scores)
     
     def __set_enviroment(self, number_node, policy, min_support)-> str:
