@@ -10,12 +10,10 @@ import os
 MAX_CARD_SUPPORT = 2
 TEST_SIZE = 0.2
 
-
 class Test:
 
     def __init__(self, files:list, cancer_type_one:str, cancer_type_two:str)-> None:
-        self.hotnet2 = files[0]
-        self.snvs_strictly_filtered = files[1]
+        self.hotnet2, self.snvs_strictly_filtered = files
         self.cancer_type_one = cancer_type_one
         self.cancer_type_two = cancer_type_two
         self.hotnet2_table = self.__get_hotnet2_table()
@@ -25,13 +23,17 @@ class Test:
         filename = self.__set_enviroment(number_node, policy, min_support)
         
         mutation_list = sorted(set(self.mutations.values()), reverse=True)[1:]
-        patient_bound = mutation_list.index(int(len(self.hotnet2_table.values)*(percentage)))
+        a = min(mutation_list, key=lambda x:abs(x-(int(len(self.hotnet2_table.values)*(percentage)))))
+        patient_bound = mutation_list.index(a)
         file = open(filename + ".txt", "a")
         scores = []
 
+        if patient_bound <= 1:
+            patient_bound = 2
+
         for v in range(patient_bound):
             print(v)
-            score, model = self.__CORELS_body(mutation_list[v],int(number_node), policy, float(min_support))
+            score, model = self.__CORELS_body(mutation_list[patient_bound],int(number_node), policy, float(min_support))
             scores.append(score)
             file.write(str(model.rl())+
                 "\nSCORE:"+str(score)+
@@ -42,20 +44,17 @@ class Test:
         plt.savefig(filename + "_plot.png")
         plt.close()
         file.close()
-        NotificationManager.telegram_notify(number_node, policy, percentage, min_support, filename)
+        NotificationManager.telegram_notify(cancer_type_one=self.cancer_type_one, cancer_type_two=self.cancer_type_two, number_node=number_node, policy=policy, percentage=percentage, min_support=min_support, filename=filename)
         return np.average(scores)
     
     def __set_enviroment(self, number_node, policy, min_support)-> str:
-        name = self.__generate_filename(number_node, policy, min_support)
+        name = f"{self.cancer_type_one}-{self.cancer_type_two}_n:{str(number_node)}_p:{policy}_m:{str(min_support)}"
         path = r'tests/'+name 
 
         if not os.path.exists(path):
             os.makedirs(path)
         
         return path+"/"+name
-
-    def __generate_filename(self, number_node:str, policy:str, min_support:float)-> str:
-        return self.cancer_type_one + "-" + self.cancer_type_two + "_n:"+ str(number_node) + "_p:" + policy + "_m:" + str(min_support)
     
     def __get_hotnet2_table(self)-> pd.DataFrame:
         hotnet2_table = pd.read_csv(self.hotnet2, sep=" ", names=["Patient", "CancerType"])
@@ -93,9 +92,6 @@ class Test:
         bin_mutation = pd.DataFrame(binary_data, columns=mutation).assign(Patient=patient_list_order)
         bin_mutation = self.hotnet2_table.merge(bin_mutation, on="Patient",how="left")
 
-        #Da Valutare, come mai se li ordino il punteggio dello score aumenta?
-        #bin_mutation = bin_mutation.sort_values('Patient')
-
         return bin_mutation[mutation].to_numpy(), bin_mutation["CancerType"].to_numpy()
 
     def __CORELS_body(self, bound:int, number_node:int, policy:str, min_support:float):
@@ -103,11 +99,11 @@ class Test:
         X, y = self.__get_snvs_strictly_filtered_table(features)
 
         card = len(features) if len(features) < MAX_CARD_SUPPORT else MAX_CARD_SUPPORT
-        c = CorelsClassifier(max_card=card, n_iter=number_node, verbosity=["rulelist"], policy=policy, min_support=min_support)
+        c = CorelsClassifier(max_card=card, n_iter=number_node, verbosity=["rulelist","label","progress", "minor"], policy=policy, min_support=min_support, c=0.005)
     
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=TEST_SIZE)
 
-        #train_split = int(train_proportion * X.shape[0])
+        #train_split = int((1-TEST_SIZE) * X.shape[0])
         #X_train, y_train = X[:train_split],y[:train_split]
         #X_test,y_test = X[train_split:], y[train_split:]
 

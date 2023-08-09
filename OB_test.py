@@ -10,8 +10,9 @@ files = [HOTNET2DIR, SNVS_STRICTLY_FILTERED]
 primo = Test(files, "LUAD", "LUSC")
 secondo = Test(files, "OV", "COADREAD")
 
-primo.launch_test(0.05, 100000, "curious", 0.01)
-primo.launch_test(0.05, 100000, "bfs", 0.1)
+NotificationManager.notify.send_markdown_text('''*INIZIO TEST*''')
 
-secondo.launch_test(0.05, 1000, "curious", 0.01)
-secondo.launch_test(0.01, 10000000, "bfs", 0.1)
+secondo.launch_test(0.01, 10000000, "curious", 0.01)
+secondo.launch_test(0.01, 10000000, "lower_bound", 0.01)
+
+NotificationManager.notify.send_markdown_text('''*FINE TEST*''')
