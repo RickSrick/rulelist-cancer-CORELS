@@ -1,0 +1,12 @@
+RULELIST:
+It's OV cancer = True
+SCORE:0.4215686274509804
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.39215686274509803
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.38235294117647056
+==============================

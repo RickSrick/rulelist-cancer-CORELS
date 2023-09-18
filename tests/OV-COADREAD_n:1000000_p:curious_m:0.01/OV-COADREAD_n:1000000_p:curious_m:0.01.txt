@@ -1,0 +1,27 @@
+RULELIST:
+if [APC && not PCDHB11]:
+  It's OV cancer = False
+else if [KRAS && not CDH17]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9607843137254902
+==============================
+RULELIST:
+if [APC && not CD163]:
+  It's OV cancer = False
+else if [KRAS && not CDH17]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9313725490196079
+==============================
+RULELIST:
+if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9411764705882353
+==============================

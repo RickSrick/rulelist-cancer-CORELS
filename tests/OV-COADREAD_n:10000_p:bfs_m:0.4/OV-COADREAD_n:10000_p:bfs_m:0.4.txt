@@ -1,0 +1,178 @@
+RULELIST:
+It's OV cancer = True
+SCORE:0.38235294117647056
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.35294117647058826
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.3627450980392157
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.45098039215686275
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.37254901960784315
+==============================
+RULELIST:
+if [TP53 && not APC]:
+  It's OV cancer = True
+else 
+  It's OV cancer = False
+SCORE:0.9215686274509803
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.4117647058823529
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.39215686274509803
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.3627450980392157
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.4019607843137255
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.4215686274509804
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.4117647058823529
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.43137254901960786
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.3431372549019608
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.35294117647058826
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.45098039215686275
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.3431372549019608
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.4019607843137255
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.39215686274509803
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.3431372549019608
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.4019607843137255
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.3627450980392157
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.4019607843137255
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.35294117647058826
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.43137254901960786
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.39215686274509803
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.37254901960784315
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.4019607843137255
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.3627450980392157
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.4215686274509804
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.47058823529411764
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.39215686274509803
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.4019607843137255
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.37254901960784315
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.4117647058823529
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.39215686274509803
+==============================
+RULELIST:
+if [TP53 && not APC]:
+  It's OV cancer = True
+else 
+  It's OV cancer = False
+SCORE:0.9215686274509803
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.4019607843137255
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.30392156862745096
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.4117647058823529
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.3333333333333333
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.4215686274509804
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.3627450980392157
+==============================

@@ -1,0 +1,27 @@
+RULELIST:
+if [KRAS && not C20orf26]:
+  It's LUAD cancer = True
+else if [TP53 && not EGFR]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.7142857142857143
+==============================
+RULELIST:
+if [not TP53 && not KDR]:
+  It's LUAD cancer = True
+else if [not KRAS && not EGFR]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.7142857142857143
+==============================
+RULELIST:
+if [not TP53 && not DNM1P46]:
+  It's LUAD cancer = True
+else if [not KRAS && not EGFR]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.7428571428571429
+==============================

@@ -1,0 +1,15 @@
+RULELIST:
+It's OV cancer = True
+SCORE:0.46078431372549017
+==============================
+RULELIST:
+if [TP53 && not APC]:
+  It's OV cancer = True
+else 
+  It's OV cancer = False
+SCORE:0.9117647058823529
+==============================
+RULELIST:
+It's OV cancer = True
+SCORE:0.2647058823529412
+==============================

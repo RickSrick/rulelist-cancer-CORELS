@@ -1,0 +1,33 @@
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else if [not NFE2L2 && not COL11A2]:
+  It's LUAD cancer = True
+else 
+  It's LUAD cancer = False
+SCORE:0.6142857142857143
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else if [not EPB41L3 && not ZIC1]:
+  It's LUAD cancer = True
+else if [KRAS && not MLL2]:
+  It's LUAD cancer = True
+else 
+  It's LUAD cancer = False
+SCORE:0.7571428571428571
+==============================
+RULELIST:
+if [TP53 && not KRAS]:
+  It's LUAD cancer = False
+else if [CDKN2A && not KRAS]:
+  It's LUAD cancer = False
+else if [not EPB41L3 && not SPTBN4]:
+  It's LUAD cancer = True
+else if [KRAS && not MLL2]:
+  It's LUAD cancer = True
+else 
+  It's LUAD cancer = False
+SCORE:0.6285714285714286
+==============================

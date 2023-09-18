@@ -1,0 +1,303 @@
+RULELIST:
+if [APC && not COL11A2]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [NRAS]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9117647058823529
+==============================
+RULELIST:
+if [APC && not ABCA9]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [not BRAF]:
+  It's OV cancer = True
+else 
+  It's OV cancer = False
+SCORE:0.9411764705882353
+==============================
+RULELIST:
+if [APC && not PMPCB]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [ATM && not TP53]:
+  It's OV cancer = False
+else if [not SMAD4]:
+  It's OV cancer = True
+else 
+  It's OV cancer = False
+SCORE:0.9509803921568627
+==============================
+RULELIST:
+if [APC && not ZNF91]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [NRAS && not NUP205]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9313725490196079
+==============================
+RULELIST:
+if [APC && not TLR8]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9313725490196079
+==============================
+RULELIST:
+if [APC && not BLM]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [ATM && not TP53]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9411764705882353
+==============================
+RULELIST:
+if [APC && not PMPCB]:
+  It's OV cancer = False
+else if [KRAS && not CDH17]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [NRAS && not NUP205]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9117647058823529
+==============================
+RULELIST:
+if [APC && not PMPCB]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9313725490196079
+==============================
+RULELIST:
+if [APC && not PCDHB11]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [ATM && not TP53]:
+  It's OV cancer = False
+else if [not SMAD4]:
+  It's OV cancer = True
+else 
+  It's OV cancer = False
+SCORE:0.9509803921568627
+==============================
+RULELIST:
+if [APC && not RASGRF2]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [CTNNB1 && not ATAD2B]:
+  It's OV cancer = False
+else if [ATM && not TP53]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9509803921568627
+==============================
+RULELIST:
+if [APC && not LTBP1]:
+  It's OV cancer = False
+else if [KRAS && not CDH17]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [ATM && not TP53]:
+  It's OV cancer = False
+else if [SMAD4]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9509803921568627
+==============================
+RULELIST:
+if [APC && not RASGRF2]:
+  It's OV cancer = False
+else if [KRAS && not CDH17]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [ATM && not TP53]:
+  It's OV cancer = False
+else if [SMAD4 && not ATAD2B]:
+  It's OV cancer = False
+else if [not TLL1]:
+  It's OV cancer = True
+else 
+  It's OV cancer = False
+SCORE:0.9313725490196079
+==============================
+RULELIST:
+if [APC && not GPR133]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [TLL1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9313725490196079
+==============================
+RULELIST:
+if [APC && not ERCC6L]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [FBXW7 && not SLC24A2]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9215686274509803
+==============================
+RULELIST:
+if [APC && not CPA5]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [not SMAD4]:
+  It's OV cancer = True
+else 
+  It's OV cancer = False
+SCORE:0.9313725490196079
+==============================
+RULELIST:
+if [APC && not ABCA9]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ATM && not TP53]:
+  It's OV cancer = False
+else if [not SMAD4]:
+  It's OV cancer = True
+else 
+  It's OV cancer = False
+SCORE:0.9215686274509803
+==============================
+RULELIST:
+if [APC && not BLM]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [FBXW7 && not L1CAM]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9607843137254902
+==============================
+RULELIST:
+if [APC && not PCDHB11]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ATM && not TP53]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9411764705882353
+==============================
+RULELIST:
+if [APC && not ABCA9]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [CTNNB1 && not ATAD2B]:
+  It's OV cancer = False
+else if [ATM && not TP53]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9117647058823529
+==============================
+RULELIST:
+if [APC && not MYO18A]:
+  It's OV cancer = False
+else if [KRAS && not CDH17]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [SMAD4]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9313725490196079
+==============================
+RULELIST:
+if [APC && not PCDHB11]:
+  It's OV cancer = False
+else if [KRAS && not CDH17]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [ATM && not TP53]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9411764705882353
+==============================
+RULELIST:
+if [APC && not CD163]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [ATM && not TP53]:
+  It's OV cancer = False
+else if [SMAD4]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9509803921568627
+==============================
+RULELIST:
+if [APC && not ABCA9]:
+  It's OV cancer = False
+else if [KRAS && not DNMBP]:
+  It's OV cancer = False
+else if [ARID1A && not RREB1]:
+  It's OV cancer = False
+else if [NRAS && not SNRNP200]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9509803921568627
+==============================

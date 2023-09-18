@@ -1,0 +1,21 @@
+RULELIST:
+if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9117647058823529
+==============================
+RULELIST:
+if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9019607843137255
+==============================
+RULELIST:
+if [APC && not CD163]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9019607843137255
+==============================

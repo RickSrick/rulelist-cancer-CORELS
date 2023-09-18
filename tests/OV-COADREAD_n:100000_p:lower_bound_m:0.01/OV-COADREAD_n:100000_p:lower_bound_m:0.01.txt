@@ -1,0 +1,183 @@
+RULELIST:
+if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9411764705882353
+==============================
+RULELIST:
+if [SMAD2 && not TMEM132B]:
+  It's OV cancer = False
+else if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9117647058823529
+==============================
+RULELIST:
+if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9117647058823529
+==============================
+RULELIST:
+if [SMAD2 && not LATS1]:
+  It's OV cancer = False
+else if [APC && not ARMC4]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9215686274509803
+==============================
+RULELIST:
+if [SMAD2 && not SALL4]:
+  It's OV cancer = False
+else if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9313725490196079
+==============================
+RULELIST:
+if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9411764705882353
+==============================
+RULELIST:
+if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9117647058823529
+==============================
+RULELIST:
+if [APC && not RB1CC1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9215686274509803
+==============================
+RULELIST:
+if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9117647058823529
+==============================
+RULELIST:
+if [SMAD2 && not STK10]:
+  It's OV cancer = False
+else if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.8627450980392157
+==============================
+RULELIST:
+if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.8627450980392157
+==============================
+RULELIST:
+if [SMAD2 && not LATS1]:
+  It's OV cancer = False
+else if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9313725490196079
+==============================
+RULELIST:
+if [APC && not CELSR3]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.8725490196078431
+==============================
+RULELIST:
+if [SMAD2 && not SPECC1]:
+  It's OV cancer = False
+else if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9411764705882353
+==============================
+RULELIST:
+if [SMAD2 && not OSMR]:
+  It's OV cancer = False
+else if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9215686274509803
+==============================
+RULELIST:
+if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.8823529411764706
+==============================
+RULELIST:
+if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9411764705882353
+==============================
+RULELIST:
+if [SMAD2 && not C8B]:
+  It's OV cancer = False
+else if [APC && not PPFIA4]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.8921568627450981
+==============================
+RULELIST:
+if [SMAD2 && not ROS1]:
+  It's OV cancer = False
+else if [APC && not NRAP]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9411764705882353
+==============================
+RULELIST:
+if [SMAD2 && not STXBP5L]:
+  It's OV cancer = False
+else if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9019607843137255
+==============================
+RULELIST:
+if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9411764705882353
+==============================
+RULELIST:
+if [SMAD2 && not NID2]:
+  It's OV cancer = False
+else if [TP53 && not APC]:
+  It's OV cancer = True
+else 
+  It's OV cancer = False
+SCORE:0.8627450980392157
+==============================
+RULELIST:
+if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.8921568627450981
+==============================

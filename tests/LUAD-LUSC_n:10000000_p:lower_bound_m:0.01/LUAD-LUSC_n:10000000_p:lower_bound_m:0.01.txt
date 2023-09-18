@@ -1,0 +1,27 @@
+RULELIST:
+if [KRAS && not EPHA6]:
+  It's LUAD cancer = True
+else if [TP53 && not EGFR]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.6571428571428571
+==============================
+RULELIST:
+if [KRAS && not PIK3CA]:
+  It's LUAD cancer = True
+else if [TP53 && not EGFR]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.7142857142857143
+==============================
+RULELIST:
+if [KRAS && ACAN]:
+  It's LUAD cancer = True
+else if [TP53 && not EGFR]:
+  It's LUAD cancer = False
+else 
+  It's LUAD cancer = True
+SCORE:0.6571428571428571
+==============================

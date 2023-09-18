@@ -1,0 +1,36 @@
+RULELIST:
+if [SMAD4 && not BOD1L1]:
+  It's OV cancer = False
+else if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9411764705882353
+==============================
+RULELIST:
+if [MAP1B]:
+  It's OV cancer = False
+else if [APC && not BRCA1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9411764705882353
+==============================
+RULELIST:
+if [ATM && not TP53]:
+  It's OV cancer = False
+else if [APC && not PCDHB11]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.9215686274509803
+==============================
+RULELIST:
+if [ARID1A && not PSMC3]:
+  It's OV cancer = False
+else if [APC && not SORL1]:
+  It's OV cancer = False
+else 
+  It's OV cancer = True
+SCORE:0.8921568627450981
+==============================
