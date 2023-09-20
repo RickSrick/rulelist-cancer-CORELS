@@ -31,7 +31,7 @@ def prune_effect():
     print(table_1)
     print(table_2)
 
-def plot_node_precision(str):
+def plot_node_precision(str, locp):
     data = "../data1.csv"
 
     table = pd.read_csv(data)
@@ -55,8 +55,9 @@ def plot_node_precision(str):
     
     plt.ylabel('Score del modello')
     plt.xlabel('nodi massimi')
+    plt.xscale('log')
     plt.title('andamento precisione con incremento dei nodi')
-    plt.legend(loc='upper right')
+    plt.legend(loc=locp, title="min support")
     plt.savefig(str+'_nodes.pgf')
     plt.close()
     return 0
